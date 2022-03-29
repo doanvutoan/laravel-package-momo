@@ -2,7 +2,7 @@
 namespace Kilala\Momo;
 use Illuminate\Support\Facades\Facade;
 
-class Momo extends Facade
+class MomoFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
