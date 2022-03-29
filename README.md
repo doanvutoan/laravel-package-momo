@@ -31,7 +31,7 @@ MOMO_SECRET_KEY=at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa
 ],
 'aliases' => [
     ...,
-    'Momo'   =>  \Kilala\Momo\MomoFacade::class
+    'Momo'   =>  \Kilala\Momo\Facades\MomoFacade::class
 ]
 ```
 
@@ -39,7 +39,7 @@ MOMO_SECRET_KEY=at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa
 
 ```php
 Route::get('/test-package-momo',function (){
-    \Kilala\Momo\MomoFacade::helloWorld();
+    Momo::helloWorld();
 });
 ```
 
@@ -47,7 +47,7 @@ Route::get('/test-package-momo',function (){
 
 ```php
 /*Chuyển hướng thanh toán bằng ứng dụng momo*/
-\Kilala\Momo\MomoFacade::checkoutMomo([
+Momo::checkoutMomo([
     'redirectUrl'   => 'https://www.example.com/result',
     'ipnUrl'        => 'https://www.example.com/ipn',
     'orderInfo'     => 'đây là đơn hàng',
@@ -59,7 +59,7 @@ Route::get('/test-package-momo',function (){
     'partnerClientId'=> 'abc@gmail.com',
 ]);
 /*Kiểm tra kết quả trả về từ momo*/
-\Kilala\Momo\MomoFacade::resultMomo([
+Momo::resultMomo([
     'requestId' => '666666666666666666',//(string)Str::orderedUuid()
     'orderId'   => 'mahoadon001',
 ]);
