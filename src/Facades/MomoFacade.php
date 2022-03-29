@@ -1,5 +1,5 @@
 <?php
-namespace Kilala\Momo;
+namespace Kilala\Momo\Facades;
 use Illuminate\Support\Facades\Facade;
 
 class MomoFacade extends Facade
@@ -9,7 +9,7 @@ class MomoFacade extends Facade
         return 'momo';
     }
     
-    public function hello()
+    public function helloWorld()
     {
         echo "Hello, Custom Facade";
     }
