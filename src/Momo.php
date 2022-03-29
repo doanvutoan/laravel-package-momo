@@ -1,5 +1,5 @@
 <?php
-namespace Dvt\Momo;
+namespace Kilala\Momo;
 use Illuminate\Support\Facades\Facade;
 
 class Momo extends Facade

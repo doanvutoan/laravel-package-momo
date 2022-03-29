@@ -1,6 +1,6 @@
 <?php
 
-namespace Dvt\Momo;
+namespace Kilala\Momo;
 
 use Illuminate\Support\ServiceProvider;
 

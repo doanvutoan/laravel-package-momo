@@ -1,10 +1,10 @@
 {
-    "name": "dvt/momo",
+    "name": "kilala/momo",
     "description": "this is demo package first for laravel",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dvt\\Momo\\": "src/"
+            "Kilala\\Momo\\": "src/"
         }
     },
     "authors": [
