@@ -1,0 +1,21 @@
+{
+    "name": "dvt/momo",
+    "description": "this is demo package first for laravel",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dvt\\Momo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "toan.doan",
+            "email": "toan.doan@kilala.vn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "illuminate/support": "^5.7 || ^6.0 || ^7.0 || ^8.0"
+    }
+}
